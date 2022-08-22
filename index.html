@@ -30,8 +30,8 @@
 
                     <img src="images/ronaldo.jpg" alt="">
                     <h3 class="mt-7 text-lg">Ronaldo</h3>
-                    <p>58 Goals 120  Assits</p>
-                    <button class="bg-blue-900 px-20 py-2 my-3" onclick="playerSelection(this)" >SELECT</button>
+                    <p>58 Goals 120 Assits</p>
+                    <button class="bg-blue-900 px-20 py-2 my-3" onclick="playerSelection(this)">SELECT</button>
 
 
                 </div>
@@ -58,7 +58,18 @@
 
                 <!--Side Bar 1 -->
                 <div class="bg-zinc-900">
-                    <h1 class="text-center mt-7 font-bold text-3xl">Selected- <span id=""> </span></h1>
+                    <h1 class="text-center mt-7 font-bold text-3xl">Selected - <span id="total-added-player"> </span>
+                    </h1>
+                    <div>
+                        <table >
+
+                            <tbody id="player-name" class="text-3xl">
+
+
+                            </tbody>
+
+                        </table>
+                    </div>
                 </div>
             </div>
         </section>
@@ -68,82 +79,84 @@
         <section>
             <div class="grid grid-cols-4 gap-7 mx-20">
 
-                    <!-- picture 4 -->
-                    <div class="bg-zinc-900 text-center h-96">
+                <!-- picture 4 -->
+                <div class="bg-zinc-900 text-center h-96">
 
-                        <img src="images/mbappe.jpg" alt="">
-                        <h3 class="mt-7 text-lg">Mbappe</h3>
-                        <p>58 Goals 120 Assits</p>
-                        <button class="bg-blue-900 px-20 py-2 my-3 " onclick="playerSelection(this)">SELECT</button>
+                    <img src="images/mbappe.jpg" alt="">
+                    <h3 class="mt-7 text-lg">Mbappe</h3>
+                    <p>58 Goals 120 Assits</p>
+                    <button class="bg-blue-900 px-20 py-2 my-3 " onclick="playerSelection(this)">SELECT</button>
 
+
+                </div>
+
+                <!-- picture 5 -->
+                <div class="bg-zinc-900 text-center h-96">
+
+                    <img src="images/ramos.jpg" alt="">
+                    <h3 class="mt-7 text-lg">Ramos</h3>
+                    <p>58 Goals 120 Assits</p>
+                    <button class="bg-blue-900 px-20 py-2 my-3" onclick="playerSelection(this)">SELECT</button>
+
+
+                </div>
+
+                <!-- picture 6 -->
+                <div class="bg-zinc-900 text-center h-96">
+
+                    <img src="images/vini.jpg" alt="">
+                    <h3 class="mt-7 text-lg">Vinicius jr</h3>
+                    <p>58 Goals 120 Assits</p>
+                    <button class="bg-blue-900 px-20 py-2 my-3" onclick="playerSelection(this)">SELECT</button>
+                </div>
+
+
+
+
+                <!--Side Bar 2-->
+                <div class="bg-zinc-900">
+                    <h1 class="text-center mt-7 font-bold text-3xl mb-3 ">Budget</h1>
+
+                    <div class="grid grid-cols-2">
+
+                        <h2 class="my-4 ml-7">Per Player</h2>
+
+                        <input class="my-2 py-2 mr-7 ml-0 bg-zinc-900 border border-white" type="text">
+
+                    </div>
+
+                    <button id="btn-calculate" class="bg-blue-900 px-20 py-2 my-3 ml-9 text-center"
+                        type="submit">Calculate</button>
+
+                    <h1 class="my-4 ml-7">Player Expenses</h1>
+
+                    <div class="grid grid-cols-2">
+
+                        <h2 class="my-4 ml-7">Manager</h2>
+
+                        <input class="my-2 py-2 mr-7 ml-0 bg-zinc-900 border border-white" type="text">
 
                     </div>
 
-                    <!-- picture 5 -->
-                    <div class="bg-zinc-900 text-center h-96">
+                    <div class="grid grid-cols-2">
 
-                        <img src="images/ramos.jpg" alt="">
-                        <h3 class="mt-7 text-lg">Ramos</h3>
-                        <p>58 Goals 120 Assits</p>
-                        <button class="bg-blue-900 px-20 py-2 my-3" onclick="playerSelection(this)">SELECT</button>
+                        <h2 class="my-4 ml-7">Coach</h2>
 
+                        <input class="my-2 py-2 mr-7 ml-0 bg-zinc-900 border border-white" type="text">
 
                     </div>
 
-                    <!-- picture 6 -->
-                    <div class="bg-zinc-900 text-center h-96">
+                    <button id="btn-totalCalculate" class="bg-blue-900 px-20 py-2 my-3 ml-9 text-center"
+                        type="submit">Calculate Total</button>
 
-                        <img src="images/vini.jpg" alt="">
-                        <h3 class="mt-7 text-lg">Vinicius jr</h3>
-                        <p>58 Goals 120 Assits</p>
-                        <button class="bg-blue-900 px-20 py-2 my-3" onclick="playerSelection(this)">SELECT</button>
-                    </div>
-
-
-
-
-                    <!--Side Bar 2-->
-                    <div class="bg-zinc-900">
-                        <h1 class="text-center mt-7 font-bold text-3xl mb-3 ">Budget</h1>
-
-                        <div class="grid grid-cols-2">
-
-                            <h2 class="my-4 ml-7">Per Player</h2>
-
-                            <input class="my-2 py-2 mr-7 ml-0 bg-zinc-900 border border-white" type="number">
-
-                        </div>
-
-                        <button id="btn-calculate" class="bg-blue-900 px-20 py-2 my-3 ml-9 text-center" type="submit">Calculate</button>
-
-                        <h1 class="my-4 ml-7">Player Expenses</h1>
-
-                        <div class="grid grid-cols-2">
-
-                            <h2 class="my-4 ml-7">Manager</h2>
-
-                            <input class="my-2 py-2 mr-7 ml-0 bg-zinc-900 border border-white" type="text">
-
-                        </div>
-
-                        <div class="grid grid-cols-2">
-
-                            <h2 class="my-4 ml-7">Coach</h2>
-
-                            <input class="my-2 py-2 mr-7 ml-0 bg-zinc-900 border border-white" type="number">
-
-                        </div>
-
-                        <button id="btn-totalCalculate" class="bg-blue-900 px-20 py-2 my-3 ml-9 text-center" type="submit">Calculate Total</button>
-
-                        <h1 class=" my-4 ml-7">Total</h1>
+                    <h1 class=" my-4 ml-7">Total</h1>
 
 
 
 
 
 
-                    </div>
+                </div>
 
 
             </div>
@@ -154,8 +167,8 @@
         <h2 class="border-t-zinc-50">Thank you</h2>
     </footer>
 
-   <script src="js/selected.js"></script>
-   <script src="js/budget.js"></script>
+    <script src="js/selected.js"></script>
+    <script src="js/budget.js"></script>
 </body>
 
 </html>
