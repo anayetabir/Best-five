@@ -1,19 +1,46 @@
+// Player Expenses
 document.getElementById('btn-calculate').addEventListener('click', function () {
 
     const calculateField = document.getElementById('calculate-field');
-    const calculateFieldString = calculateField.value;
-    // const previousCalculateField = parseInt(calculateFieldString);
+    const newCalculateFieldString = calculateField.value;
+    const newCalculateField = parseInt(newCalculateFieldString);
 
-    const playerTotalElement = document.getElementById('player-total');
-    const playerTotal = playerTotalElement.innerText;
-    playerTotalElement.innerText = calculateFieldString;  
+    const selectTotalElement = document.getElementById('total-added-player');
+    const previousSelectTotalString = selectTotalElement.innerText;
+    const previousSelectTotal = parseInt(previousSelectTotalString);
 
+    const currentPlayerTotal = newCalculateField * previousSelectTotal;
 
+    const calculateTotalElement = document.getElementById('player-total');
+    calculateTotalElement.innerText = currentPlayerTotal;
 })
 
 
 
-document.getElementById('btn-totalCalculate').addEventListener('click',function(){
 
-    console.log('button clicked');
+// Total
+document.getElementById('btn-totalCalculate').addEventListener('click', function () {
+
+    const managerField = document.getElementById('manager-field');
+    const newManagerFieldString = managerField.value;
+    const newManagerField = parseInt(newManagerFieldString);
+
+    const coachField = document.getElementById('coach-field');
+    const newCoachFieldString = coachField.value;
+    const newCoachField = parseInt(newCoachFieldString);
+
+    const calculateTotalElement = document.getElementById('player-total');
+    const newCalculateTotalElementString = calculateTotalElement.innerText;
+    const newCalculateTotalElement = parseInt(newCalculateTotalElementString);
+
+
+    const totalAmountAll = newManagerField + newCoachField + newCalculateTotalElement;
+
+    const calculateTotalAmountAll = document.getElementById('total-amount');
+    calculateTotalAmountAll.innerText = totalAmountAll;
+
+
+
+
+
 })
