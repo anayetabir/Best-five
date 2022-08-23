@@ -17,8 +17,8 @@ function playerList(playerArray) {
         const tr = document.createElement('tr');
         tr.innerHTML =
             `
-        <th>${i + 1}.</th>
-        <td>${name}</td>
+        <th> ${i + 1}</th>
+        <td>. ${name}</td>
         
         `;
         tableBody.appendChild(tr);
@@ -31,6 +31,7 @@ function playerList(playerArray) {
 function playerSelection(element) {
 
     element.disabled = true;
+    element.style.backgroundColor = 'gray';
     const playerName = element.parentNode.children[1].innerText;
 
     const playerObj = {
