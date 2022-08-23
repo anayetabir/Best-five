@@ -8,7 +8,8 @@ function playerList(playerArray) {
     for (let i = 0; i < playerArray.length; i++) {
 
         if (i > 4) {
-            alert("Limit Over");
+            playerArray.pop();
+            alert("You are selected maximum five player");
             break;
         }
 
@@ -16,7 +17,7 @@ function playerList(playerArray) {
         const tr = document.createElement('tr');
         tr.innerHTML =
             `
-        <th>${i + 1}</th>
+        <th>${i + 1}.</th>
         <td>${name}</td>
         
         `;
@@ -29,6 +30,7 @@ function playerList(playerArray) {
 
 function playerSelection(element) {
 
+    element.disabled = true;
     const playerName = element.parentNode.children[1].innerText;
 
     const playerObj = {
@@ -37,7 +39,6 @@ function playerSelection(element) {
 
     playerArray.push(playerObj);
 
-    document.getElementById("total-added-player").innerText = playerArray.length;
-
     playerList(playerArray);
+    document.getElementById("total-added-player").innerText = playerArray.length;
 }

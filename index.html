@@ -30,8 +30,9 @@
 
                     <img src="images/ronaldo.jpg" alt="">
                     <h3 class="mt-7 text-lg">Ronaldo</h3>
-                    <p>58 Goals   120 Assits</p>
-                    <button class="bg-blue-900 px-20 py-2 my-3" onclick="playerSelection(this)">SELECT</button>
+                    <p>58 Goals 120 Assits</p>
+                    <button id="btn-ronaldo" class="bg-blue-900 px-20 py-2 my-3"
+                        onclick="playerSelection(this)">SELECT</button>
 
 
                 </div>
@@ -42,7 +43,8 @@
                     <img src="images/messi.jpg" alt="">
                     <h3 class="mt-7 text-lg">Lionel Messi</h3>
                     <p>58 Goals 120 Assits</p>
-                    <button class="bg-blue-900 px-20 py-2 my-3" onclick="playerSelection(this)">SELECT</button>
+                    <button id="btn-messi" class="bg-blue-900 px-20 py-2 my-3"
+                        onclick="playerSelection(this)">SELECT</button>
 
 
                 </div>
@@ -53,12 +55,13 @@
                     <img src="images/neymar.jpg" alt="">
                     <h3 class="mt-7 text-lg">Neymar jr</h3>
                     <p>58 Goals 120 Assits</p>
-                    <button class="bg-blue-900 px-20 py-2 my-3" onclick="playerSelection(this)">SELECT</button>
+                    <button id="btn-neymar" class="bg-blue-900 px-20 py-2 my-3"
+                        onclick="playerSelection(this)">SELECT</button>
                 </div>
 
                 <!--Side Bar 1 -->
                 <div class="bg-zinc-900">
-                    <h1 class="text-center mt-7 font-bold text-3xl">Selected - <span id="total-added-player"> </span>
+                    <h1 class="text-center mt-7 font-bold text-3xl">Selected - <span id="total-added-player">0</span>
                     </h1>
                     <div class="">
                         <table>
@@ -85,7 +88,8 @@
                     <img src="images/mbappe.jpg" alt="">
                     <h3 class="mt-7 text-lg">Mbappe</h3>
                     <p>58 Goals 120 Assits</p>
-                    <button class="bg-blue-900 px-20 py-2 my-3 " onclick="playerSelection(this)">SELECT</button>
+                    <button id="btn-mbappe" class="bg-blue-900 px-20 py-2 my-3 "
+                        onclick="playerSelection(this)">SELECT</button>
 
 
                 </div>
@@ -96,7 +100,8 @@
                     <img src="images/ramos.jpg" alt="">
                     <h3 class="mt-7 text-lg">Ramos</h3>
                     <p>58 Goals 120 Assits</p>
-                    <button class="bg-blue-900 px-20 py-2 my-3" onclick="playerSelection(this)">SELECT</button>
+                    <button id="btn-ramos" class="bg-blue-900 px-20 py-2 my-3"
+                        onclick="playerSelection(this)">SELECT</button>
 
 
                 </div>
@@ -107,7 +112,8 @@
                     <img src="images/vini.jpg" alt="">
                     <h3 class="mt-7 text-lg">Vinicius jr</h3>
                     <p>58 Goals 120 Assits</p>
-                    <button class="bg-blue-900 px-20 py-2 my-3" onclick="playerSelection(this)">SELECT</button>
+                    <button id="btn-vini" class="bg-blue-900 px-20 py-2 my-3"
+                        onclick="playerSelection(this)">SELECT</button>
                 </div>
 
 
@@ -121,14 +127,15 @@
 
                         <h2 class="my-4 ml-7">Per Player</h2>
 
-                        <input id="calculate-field" class="my-2 py-2 mr-7 ml-0 bg-zinc-900 border border-white" type="text">
+                        <input id="calculate-field" class="my-2 py-2 mr-7 ml-0 bg-zinc-900 border border-white"
+                            type="text">
 
                     </div>
 
                     <button id="btn-calculate" class="bg-blue-900 px-20 py-2 my-3 ml-9 text-center">Calculate</button>
 
                     <div class="grid grid-cols-2 my-4 ml-7">
-                        <h1 >Player Expenses</h1>
+                        <h1>Player Expenses</h1>
                         <h1>$ <span id="player-total">00</span></h2>
                     </div>
 
@@ -136,7 +143,8 @@
 
                         <h2 class="my-4 ml-7">Manager</h2>
 
-                        <input id="manager-field" class="my-2 py-2 mr-7 ml-0 bg-zinc-900 border border-white" type="text">
+                        <input id="manager-field" class="my-2 py-2 mr-7 ml-0 bg-zinc-900 border border-white"
+                            type="text">
 
                     </div>
 
@@ -148,12 +156,13 @@
 
                     </div>
 
-                    <button id="btn-totalCalculate" class="bg-blue-900 px-20 py-2 my-3 ml-9 text-center">Calculate Total</button>
+                    <button id="btn-totalCalculate" class="bg-blue-900 px-20 py-2 my-3 ml-9 text-center">Calculate
+                        Total</button>
 
-                        <div class="grid grid-cols-2 my-4 ml-7">
-                            <h1>Total</h1>
-                            <h1>$<span id="total-amount">00</span></h1>
-                        </div>
+                    <div class="grid grid-cols-2 my-4 ml-7">
+                        <h1>Total</h1>
+                        <h1>$<span id="total-amount">00</span></h1>
+                    </div>
 
 
 
@@ -170,7 +179,7 @@
     <footer>
         <h2 class="border-t-zinc-50">Thank you</h2>
     </footer>
-
+    <script src="js/disable.js"></script>
     <script src="js/selected.js"></script>
     <script src="js/budget.js"></script>
 </body>
